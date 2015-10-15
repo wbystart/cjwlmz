@@ -17,10 +17,10 @@ return array(
     'TAGLIB_PRE_LOAD'     =>    'OT\\TagLib\\Article,OT\\TagLib\\Think',
         
     /* 主题设置 */
-    'DEFAULT_THEME' =>  'default',  // 默认模板主题名称
+    'DEFAULT_THEME' =>  'wlmz',  // 默认模板主题名称
 
     /* 数据缓存设置 */
-    'DATA_CACHE_PREFIX' => 'onethink_', // 缓存前缀
+    'DATA_CACHE_PREFIX' => 'wlmz_', // 缓存前缀
     'DATA_CACHE_TYPE'   => 'File', // 数据缓存类型
 
     /* 文件上传相关配置 */
@@ -59,9 +59,10 @@ return array(
     'TMPL_PARSE_STRING' => array(
         '__STATIC__' => __ROOT__ . '/Public/static',
         '__ADDONS__' => __ROOT__ . '/Public/' . MODULE_NAME . '/Addons',
-        '__IMG__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/images',
-        '__CSS__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/css',
-        '__JS__'     => __ROOT__ . '/Public/' . MODULE_NAME . '/js',
+        '__THEME__' => __ROOT__ . '/Public/' . MODULE_NAME . '/'.HOME_THEME,
+        '__IMG__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/'.HOME_THEME.'/images',
+        '__CSS__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/'.HOME_THEME.'/css',
+        '__JS__'     => __ROOT__ . '/Public/' . MODULE_NAME . '/'.HOME_THEME.'/js',
     ),
 
     /* SESSION 和 COOKIE 配置 */

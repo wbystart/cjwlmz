@@ -15,6 +15,9 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
  */
 define('APP_DEBUG', true );
 
+// 定义当前前台主题
+define('HOME_THEME','wlmz');
+
 /**
  * 应用目录设置
  * 安全期间，建议安装调试完成后移动到非WEB目录
@@ -30,7 +33,7 @@ if(!is_file(APP_PATH . 'User/Conf/config.php')){
  * 缓存目录设置
  * 此目录必须可写，建议移动到非WEB目录
  */
-define ( 'RUNTIME_PATH', './Runtime/' );
+// define ( 'RUNTIME_PATH', './Runtime/' );
 
 /**
  * 引入核心入口
