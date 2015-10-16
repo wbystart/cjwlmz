@@ -233,7 +233,7 @@
 
             <!-- section begin -->
             <section id="section-about-us-2" class="side-bg no-padding">
-                <div class="image-container col-md-5 pull-left animated" data-animation="fadeInLeft" data-delay="0"></div>
+                <div class="image-container col-md-5 pull-left animated" data-animation="fadeInLeft" data-delay="0"> </div>
 
                 <div class="container">
                     <div class="row">
